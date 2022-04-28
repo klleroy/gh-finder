@@ -29,9 +29,9 @@ export const GithubProvider = ({ children }) => {
 			type: 'GET_USERS',
 			payload: data,
 		});
-
-		const setLoading = () => dispatch({ type: 'SET_LOADING' });
 	};
+
+	const setLoading = () => dispatch({ type: 'SET_LOADING' });
 
 	return (
 		<GithubContext.Provider
